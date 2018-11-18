@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C3C256B42182C6A600BC4B14 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3C256B32182C6A600BC4B14 /* main.cpp */; };
+		C3C256C02182C6DB00BC4B14 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3C256BE2182C6DA00BC4B14 /* main.cpp */; };
+		C3C256C12182C6DB00BC4B14 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = C3C256BF2182C6DB00BC4B14 /* Makefile */; };
+		C3C256C82182CA1800BC4B14 /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C256C72182CA1800BC4B14 /* libGLEW.2.1.0.dylib */; };
+		C3C256CA2182CA2600BC4B14 /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C256C92182CA2600BC4B14 /* libglfw.3.2.dylib */; };
+		C3C256CB2182CF8E00BC4B14 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C256C32182C71C00BC4B14 /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +28,16 @@
 
 /* Begin PBXFileReference section */
 		C3C256B02182C6A600BC4B14 /* HW3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HW3; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3C256B32182C6A600BC4B14 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C3C256BA2182C6DA00BC4B14 /* phong.vs */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; path = phong.vs; sourceTree = "<group>"; };
+		C3C256BB2182C6DA00BC4B14 /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
+		C3C256BC2182C6DA00BC4B14 /* phong.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = phong.frag; sourceTree = "<group>"; };
+		C3C256BD2182C6DA00BC4B14 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		C3C256BE2182C6DA00BC4B14 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C3C256BF2182C6DB00BC4B14 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		C3C256C32182C71C00BC4B14 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		C3C256C52182C71F00BC4B14 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		C3C256C72182CA1800BC4B14 /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.1.0.dylib; path = ../../../../../../../../../../usr/local/Cellar/glew/2.1.0/lib/libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
+		C3C256C92182CA2600BC4B14 /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = ../../../../../../../../../../usr/local/Cellar/glfw/3.2.1/lib/libglfw.3.2.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +45,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3C256CB2182CF8E00BC4B14 /* OpenGL.framework in Frameworks */,
+				C3C256CA2182CA2600BC4B14 /* libglfw.3.2.dylib in Frameworks */,
+				C3C256C82182CA1800BC4B14 /* libGLEW.2.1.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +59,7 @@
 			children = (
 				C3C256B22182C6A600BC4B14 /* HW3 */,
 				C3C256B12182C6A600BC4B14 /* Products */,
+				C3C256C22182C71C00BC4B14 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +74,25 @@
 		C3C256B22182C6A600BC4B14 /* HW3 */ = {
 			isa = PBXGroup;
 			children = (
-				C3C256B32182C6A600BC4B14 /* main.cpp */,
+				C3C256BD2182C6DA00BC4B14 /* Camera.h */,
+				C3C256BE2182C6DA00BC4B14 /* main.cpp */,
+				C3C256BF2182C6DB00BC4B14 /* Makefile */,
+				C3C256BC2182C6DA00BC4B14 /* phong.frag */,
+				C3C256BA2182C6DA00BC4B14 /* phong.vs */,
+				C3C256BB2182C6DA00BC4B14 /* Shader.h */,
 			);
 			path = HW3;
+			sourceTree = "<group>";
+		};
+		C3C256C22182C71C00BC4B14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3C256C92182CA2600BC4B14 /* libglfw.3.2.dylib */,
+				C3C256C72182CA1800BC4B14 /* libGLEW.2.1.0.dylib */,
+				C3C256C52182C71F00BC4B14 /* GLUT.framework */,
+				C3C256C32182C71C00BC4B14 /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3C256B42182C6A600BC4B14 /* main.cpp in Sources */,
+				C3C256C12182C6DB00BC4B14 /* Makefile in Sources */,
+				C3C256C02182C6DB00BC4B14 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +273,20 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JGVA233E7G;
+				HEADER_SEARCH_PATHS = (
+					$glew_header,
+					$glfw_header,
+					$glm_header,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					$glew_lib,
+					$glfw_lib,
+					$glm_lib,
+					/usr/local/Cellar/glew/2.1.0/lib,
+					/usr/local/Cellar/glfw/3.2.1/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "";
 			};
 			name = Debug;
 		};
@@ -248,7 +295,20 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JGVA233E7G;
+				HEADER_SEARCH_PATHS = (
+					$glew_header,
+					$glfw_header,
+					$glm_header,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					$glew_lib,
+					$glfw_lib,
+					$glm_lib,
+					/usr/local/Cellar/glew/2.1.0/lib,
+					/usr/local/Cellar/glfw/3.2.1/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "";
 			};
 			name = Release;
 		};
