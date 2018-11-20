@@ -27,7 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C3C256B02182C6A600BC4B14 /* HW3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HW3; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3C256B02182C6A600BC4B14 /* GlobalIllumination */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GlobalIllumination; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3C256BA2182C6DA00BC4B14 /* phong.vs */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; path = phong.vs; sourceTree = "<group>"; };
 		C3C256BB2182C6DA00BC4B14 /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
 		C3C256BC2182C6DA00BC4B14 /* phong.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = phong.frag; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 		C3C256A72182C6A600BC4B14 = {
 			isa = PBXGroup;
 			children = (
-				C3C256B22182C6A600BC4B14 /* HW3 */,
+				C3C256B22182C6A600BC4B14 /* GlobalIllumination */,
 				C3C256B12182C6A600BC4B14 /* Products */,
 				C3C256C22182C71C00BC4B14 /* Frameworks */,
 			);
@@ -66,12 +66,12 @@
 		C3C256B12182C6A600BC4B14 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C3C256B02182C6A600BC4B14 /* HW3 */,
+				C3C256B02182C6A600BC4B14 /* GlobalIllumination */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C3C256B22182C6A600BC4B14 /* HW3 */ = {
+		C3C256B22182C6A600BC4B14 /* GlobalIllumination */ = {
 			isa = PBXGroup;
 			children = (
 				C3C256BD2182C6DA00BC4B14 /* Camera.h */,
@@ -81,7 +81,7 @@
 				C3C256BA2182C6DA00BC4B14 /* phong.vs */,
 				C3C256BB2182C6DA00BC4B14 /* Shader.h */,
 			);
-			path = HW3;
+			path = GlobalIllumination;
 			sourceTree = "<group>";
 		};
 		C3C256C22182C71C00BC4B14 /* Frameworks */ = {
@@ -98,9 +98,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C3C256AF2182C6A600BC4B14 /* HW3 */ = {
+		C3C256AF2182C6A600BC4B14 /* GlobalIllumination */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C3C256B72182C6A600BC4B14 /* Build configuration list for PBXNativeTarget "HW3" */;
+			buildConfigurationList = C3C256B72182C6A600BC4B14 /* Build configuration list for PBXNativeTarget "GlobalIllumination" */;
 			buildPhases = (
 				C3C256AC2182C6A600BC4B14 /* Sources */,
 				C3C256AD2182C6A600BC4B14 /* Frameworks */,
@@ -110,9 +110,9 @@
 			);
 			dependencies = (
 			);
-			name = HW3;
+			name = GlobalIllumination;
 			productName = HW3;
-			productReference = C3C256B02182C6A600BC4B14 /* HW3 */;
+			productReference = C3C256B02182C6A600BC4B14 /* GlobalIllumination */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -129,7 +129,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C3C256AB2182C6A600BC4B14 /* Build configuration list for PBXProject "HW3" */;
+			buildConfigurationList = C3C256AB2182C6A600BC4B14 /* Build configuration list for PBXProject "GlobalIllumination" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -141,7 +141,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C3C256AF2182C6A600BC4B14 /* HW3 */,
+				C3C256AF2182C6A600BC4B14 /* GlobalIllumination */,
 			);
 		};
 /* End PBXProject section */
@@ -315,7 +315,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C3C256AB2182C6A600BC4B14 /* Build configuration list for PBXProject "HW3" */ = {
+		C3C256AB2182C6A600BC4B14 /* Build configuration list for PBXProject "GlobalIllumination" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C3C256B52182C6A600BC4B14 /* Debug */,
@@ -324,7 +324,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C3C256B72182C6A600BC4B14 /* Build configuration list for PBXNativeTarget "HW3" */ = {
+		C3C256B72182C6A600BC4B14 /* Build configuration list for PBXNativeTarget "GlobalIllumination" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C3C256B82182C6A600BC4B14 /* Debug */,
